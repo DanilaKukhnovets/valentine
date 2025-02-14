@@ -51,9 +51,15 @@ let init = function () {
     let pointsOrigin = [];
     let i;
     let dr = mobile ? 0.3 : 0.1;
-    for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 210, 13, 0, 0));
-    for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 150, 9, 0, 0));
-    for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 90, 5, 0, 0));
+    for (i = 0; i < Math.PI * 2; i += dr)
+        pointsOrigin.push(scaleAndTranslate(heartPosition(i), 100, 7, 0, 0)); // Было 150, 10
+
+    for (i = 0; i < Math.PI * 2; i += dr)
+        pointsOrigin.push(scaleAndTranslate(heartPosition(i), 70, 5, 0, 0)); // Было 100, 7
+
+    for (i = 0; i < Math.PI * 2; i += dr)
+        pointsOrigin.push(scaleAndTranslate(heartPosition(i), 40, 3, 0, 0));  // Было 60, 4
+
     let heartPointsCount = pointsOrigin.length;
 
     let targetPoints = [];
