@@ -52,13 +52,13 @@ let init = function () {
     let i;
     let dr = mobile ? 0.3 : 0.1;
     for (i = 0; i < Math.PI * 2; i += dr)
-        pointsOrigin.push(scaleAndTranslate(heartPosition(i), 150, 10, 0, 0)); // Было 210, 13
+        pointsOrigin.push(scaleAndTranslate(heartPosition(i), 100, 7, 0, 0)); // Было 150, 10
 
     for (i = 0; i < Math.PI * 2; i += dr)
-        pointsOrigin.push(scaleAndTranslate(heartPosition(i), 100, 7, 0, 0)); // Было 150, 9
+        pointsOrigin.push(scaleAndTranslate(heartPosition(i), 70, 5, 0, 0)); // Было 100, 7
 
     for (i = 0; i < Math.PI * 2; i += dr)
-        pointsOrigin.push(scaleAndTranslate(heartPosition(i), 60, 4, 0, 0));  // Было 90, 5
+        pointsOrigin.push(scaleAndTranslate(heartPosition(i), 40, 3, 0, 0));  // Было 60, 4
 
     let heartPointsCount = pointsOrigin.length;
 
