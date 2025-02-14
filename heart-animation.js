@@ -51,7 +51,7 @@ let init = function () {
     let pointsOrigin = [];
     let i;
     let dr = mobile ? 0.3 : 0.1;
-    for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 350, 20, 0, 0));
+    for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 250, 20, 0, 0));
     for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 250, 14, 0, 0));
     for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 180, 8, 0, 0));
     let heartPointsCount = pointsOrigin.length;
